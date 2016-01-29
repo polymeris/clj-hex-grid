@@ -1,6 +1,6 @@
 (ns clj-hex-grid.range-test
-  (:require [clj-hex-grid.range :as range])
-  (:require [clj-hex-grid.neighbours :as n])
+  (:require [clj-hex-grid.range :as range]
+            [clj-hex-grid.neighbours :as n])
   (:use [midje.sweet]))
 
 (def cube_origin {:x 0 :y 0 :z 0})

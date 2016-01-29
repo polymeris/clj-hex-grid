@@ -1,5 +1,5 @@
 (ns clj-hex-grid.range
-  (require [clj-hex-grid.neighbours :as n]))
+  (:require [clj-hex-grid.neighbours :as n]))
 
 (defn- map_over_y
   "var dz = -dx-dy

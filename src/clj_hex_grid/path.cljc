@@ -1,5 +1,5 @@
 (ns clj-hex-grid.path
-  (require [clojure.data.priority-map :refer :all]
+  (:require [clojure.data.priority-map :refer :all]
            [clj-hex-grid.distance :as d]
            [clj-hex-grid.neighbours :as n]
            [clj-hex-grid.round :refer [cube-round]]))

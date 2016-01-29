@@ -1,5 +1,5 @@
 (ns clj-hex-grid.distance
-  (require [clj-hex-grid.coordinate :as c]))
+  (:require [clj-hex-grid.coordinate :as c]))
 
 (defn cube-between
   "max(abs(a.x - b.x), abs(a.y - b.y), abs(a.z - b.z))"
