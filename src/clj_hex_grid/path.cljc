@@ -1,8 +1,8 @@
 (ns clj-hex-grid.path
-  (:require [clojure.data.priority-map :refer :all]
-           [clj-hex-grid.distance :as d]
-           [clj-hex-grid.neighbours :as n]
-           [clj-hex-grid.round :refer [cube-round]]))
+  (:require [clojure.data.priority-map :refer [priority-map]]
+            [clj-hex-grid.distance :as d]
+            [clj-hex-grid.neighbours :as n]
+            [clj-hex-grid.round :refer [cube-round]]))
 
 (defn- cube_lerp
   "return Cube(a.x + (b.x - a.x) * t,
@@ -53,7 +53,7 @@
 (defn cube-find-path
   "A* search asuming cube coordinates. A board is a map of nodes to costs."
   ([start end board]
-    (cube-find-path start end #(get board %) #(contains? board %)))
+   (cube-find-path start end #(get board %) #(contains? board %)))
   ([start end cost-fn in-bounds?]
    (find-path start end
               cost-fn
