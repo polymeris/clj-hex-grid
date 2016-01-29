@@ -1,5 +1,6 @@
 # clj-hex-grid
 
+![clj-hex-grid](https://raw.githubusercontent.com/polymeris/clj-hex-grid/master/resources/clj-hex-grid.png)
 A Clojure library implementing the algorithms specified in http://www.redblobgames.com/grids/hexagons/.
 
 [![Build Status](https://snap-ci.com/andeemarks/clj-hex-grid/branch/master/build_image)](https://snap-ci.com/andeemarks/clj-hex-grid/branch/master)
@@ -15,10 +16,10 @@ A Clojure library implementing the algorithms specified in http://www.redblobgam
 1. Range - In progress
 1. Rotation - To do
 1. Rings - To do
-1. Field of view - To do
-1. Hex to pixel - To do
-1. Pixel to hex - To do
-1. Rounding - To do
+1. Field of view - Done (cube coordinates, small fov)
+1. Hex to pixel - WIP
+1. Pixel to hex - WIP
+1. Rounding - Done (cube coordinates)
 1. Map storage - To do
 1. Wraparound maps - To do
 1. Pathfinding - Done (cube coordinates)
