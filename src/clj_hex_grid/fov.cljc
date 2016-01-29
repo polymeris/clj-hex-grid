@@ -12,7 +12,8 @@
               (if first-opaque (cons first-opaque visible)
                                visible)))]
     (->> (n/cube-ring origin radius)
-         (pmap visible-hexes)
+         (#?(:cljs map
+             :clj  pmap) visible-hexes)
          flatten
          set)))
 
