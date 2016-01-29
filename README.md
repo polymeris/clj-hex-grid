@@ -1,11 +1,10 @@
 # clj-hex-grid
 
 ![clj-hex-grid](https://raw.githubusercontent.com/polymeris/clj-hex-grid/master/resources/clj-hex-grid.png)
-A Clojure library implementing the algorithms specified in http://www.redblobgames.com/grids/hexagons/.
-
 [![Build Status](https://snap-ci.com/andeemarks/clj-hex-grid/branch/master/build_image)](https://snap-ci.com/andeemarks/clj-hex-grid/branch/master)
+[![Clojars Project](https://img.shields.io/clojars/v/clj-hex-grid.svg)](https://clojars.org/clj-hex-grid)
 
-## Features
+A Clojure library implementing the algorithms specified in http://www.redblobgames.com/grids/hexagons/.
 
 | Feature                   | Cube | Offset | Axial | Flat | Pointy |
 | ------------------------- |:----:|:------:|:-----:|:----:|:------:|
