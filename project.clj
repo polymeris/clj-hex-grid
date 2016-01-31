@@ -1,4 +1,4 @@
-(defproject clj-hex-grid "0.1.2-SNAPSHOT"
+(defproject clj-hex-grid "0.1.3-SNAPSHOT"
   :description "A basic Clojure library for working with hexagonal grids"
   :url "https://github.com/andeemarks/clj-hex-grid/"
   :license {:name "Eclipse Public License"

@@ -14,7 +14,7 @@ A Clojure library implementing the algorithms specified in http://www.redblobgam
 | Distances                 | ✓    | ✓      |       | ✓    |        |
 | Range                     |      |        |       |      |        |
 | Rotation                  |      |        |       |      |        |
-| Rings                     | ✓    |        |       | ✓    |        |
+| Rings & spirals           | ✓    |        |       | ✓    |        |
 | Line drawing              | ✓    |        |       | ✓    | ✓      |
 | Field of View‡            | ✓    |        |       | ✓    |        |
 | Hex to pixel & viceversa  | ✓    |        |       | ✓    |        |

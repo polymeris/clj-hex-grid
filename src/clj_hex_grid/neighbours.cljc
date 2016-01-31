@@ -155,9 +155,16 @@
 (defn cube-ring
   "Seq of hexes at `radius` distance from center."
   [origin radius]
-  (flatten
-    (map
-      (fn [[offset-orientation neighbours-orientation]]
-        (let [start (last (cube-n-neighbours origin (+ radius 1) offset-orientation))]
-          (cube-n-neighbours start radius neighbours-orientation)))
-      cube-ring-directions)))
+  (if (= 1 radius)
+    (list origin)
+    (flatten
+      (map
+        (fn [[offset-orientation neighbours-orientation]]
+          (let [start (last (cube-n-neighbours origin radius offset-orientation))]
+            (cube-n-neighbours start (- radius 1) neighbours-orientation)))
+        cube-ring-directions))))
+
+(defn cube-circle
+  "Seq of hexes at `radius` or less distance from the center, a.k.a spiral"
+  [origin radius]
+  (flatten (map (partial cube-ring origin) (range (+ radius 1)))))
